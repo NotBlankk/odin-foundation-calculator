@@ -1,7 +1,23 @@
-let firstNumber = 0
-let secondNumber = 0
+let firstNumber = ''
+let secondNumber = ''
 let operator = ''
+const display = document.getElementById('result')
+const appendToDisplay = (input) =>{
+    display.value += input
+}
 
+const clearDisplay = () =>{
+    display.value = '';
+}
+
+const calc = () => {
+    try{
+        display.value = eval(display.value)
+
+    }catch(e){
+        display.value = "ERROR"
+    }
+}
 let addOperator = (firstNumber, secondNumber) => {
     return firstNumber + secondNumber
 }

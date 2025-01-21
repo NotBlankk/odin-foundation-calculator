@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./js.js"></script>
+    <script src="./js.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="result"></div>
-        <div class="keypad"></div>
+        <input id="result" readonly>
+        <div id="keypad">
+            <button onclick="clearDisplay();" type="button">CLEAR</button>
+            <button onclick="appendToDisplay('+');" type="button">+</button>
+            <button onclick="appendToDisplay('-');" type="button">-</button>
+            <button onclick="appendToDisplay('/');" type="button">/</button>
+            <button onclick="appendToDisplay(7);" type="button">7</button>
+            <button onclick="appendToDisplay(8);" type="button">8</button>
+            <button onclick="appendToDisplay(9);" type="button">9</button>
+            <button onclick="appendToDisplay('*');" type="button">*</button>
+            <button onclick="appendToDisplay(4);" type="button">4</button>
+            <button onclick="appendToDisplay(5);" type="button">5</button>
+            <button onclick="appendToDisplay(6);" type="button">6</button>
+            <button onclick="appendToDisplay('.');" type="button">.</button>
+            <button onclick="appendToDisplay(1);" type="button">1</button>
+            <button onclick="appendToDisplay(2);" type="button">2</button>
+            <button onclick="appendToDisplay(3);" type="button">3</button>
+            <button onclick="calc();" type="button">=</button>
+            <button onclick="appendToDisplay(0);" type="button">0</button>
+            
+        </div>
 
     </div>
     

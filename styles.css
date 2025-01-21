@@ -6,20 +6,31 @@ body {
     align-items: center;
 }
 .container {
-    margin: 50px;
-    background-color: blueviolet;
+    
+    
     height: 800px;
     width: 400px;
 } 
-.result {
-    height: 200px;
-    margin: 50px;
-    background-color: aliceblue;
+#result {
+    width: 100%;
+    padding: 20px;
+    background-color:black;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    color: white;
+    border: 2px solid gray;
 }
-.keypad {
-    
+#keypad {
+    padding: 20px;
     height: 450px;
-    margin: 50px;
+    width: 100%;
     background-color: aliceblue;
+    border: 2px solid gray;
     
+    
+}
+#keypad > button {
+    width: 24%;
+    height: 20%;
 }
